@@ -1,4 +1,4 @@
-package services
+package service
 
 import (
 	"github.com/Viniciuscpires/fc_api_product/internal/database"
