@@ -23,7 +23,7 @@ func (ps *ProductService) GetProducts() ([]*entity.Product, error) {
 	return products, nil
 }
 
-func (ps *ProductService) GetProdutById(id string) (*entity.Product, error) {
+func (ps *ProductService) GetProductById(id string) (*entity.Product, error) {
 	product, err := ps.ProductDB.GetProduct(id)
 	if err != nil {
 		return nil, err
@@ -31,7 +31,7 @@ func (ps *ProductService) GetProdutById(id string) (*entity.Product, error) {
 	return product, nil
 }
 
-func (ps *ProductService) GetProdutByCategory(category_id string) ([]*entity.Product, error) {
+func (ps *ProductService) GetProductByCategory(category_id string) ([]*entity.Product, error) {
 	products, err := ps.ProductDB.GetProductByCategory(category_id)
 	if err != nil {
 		return nil, err
